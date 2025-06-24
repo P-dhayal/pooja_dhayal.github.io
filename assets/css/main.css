@@ -121,7 +121,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #777;
+		color: #222;
 		font-weight: 700;
 	}
 
@@ -134,7 +134,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #777;
+		color: #222;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1759,7 +1759,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #aaa;
+		color: #222;
 		position: relative;
 		margin: 0 0 1.6875em 0;
 	}
@@ -1790,7 +1790,7 @@ input, select, textarea {
 	}
 
 		header.major h2 + p {
-			color: #777;
+			color: #222;
 			font-size: 1.75em;
 			font-weight: 700;
 			margin-top: -0.75em;
@@ -1803,7 +1803,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #777;
+		color: #222;
 		display: block;
 		font-size: 0.9em;
 		font-weight: 700;
@@ -1862,7 +1862,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #777;
+			color: #222;
 			background: #fff;
 		}
 
@@ -1965,25 +1965,25 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: #aaa !important;
+		color: #222 !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: #aaa !important;
+		color: #222 !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: #aaa !important;
+		color: #222 !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: #aaa !important;
+		color: #222 !important;
 		font-style: italic;
 		opacity: 1.0;
 	}
@@ -2463,7 +2463,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #777;
+			color: #222;
 			font-size: 0.9em;
 			font-weight: 700;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2589,7 +2589,7 @@ input, select, textarea {
 		.button.alt {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #e4e4e4;
-			color: #777 !important;
+			color: #222 !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2597,7 +2597,7 @@ input, select, textarea {
 			input[type="button"].alt:hover,
 			.button.alt:hover {
 				background-color: #f4f4f4;
-				color: #777 !important;
+				color: #222 !important;
 			}
 
 			input[type="submit"].alt:active,
@@ -2611,7 +2611,7 @@ input, select, textarea {
 			input[type="reset"].alt.icon:before,
 			input[type="button"].alt.icon:before,
 			.button.alt.icon:before {
-				color: #aaa;
+				color: #222;
 			}
 
 		input[type="submit"].primary,
@@ -2701,7 +2701,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		background: #4169E1;
-		color: #d2f2e9;
+		color: #ffffff;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2720,11 +2720,11 @@ input, select, textarea {
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: #ffffff;
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: #ffffff;
 		}
 
 			#header a:hover {
@@ -2751,7 +2751,7 @@ input, select, textarea {
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #ffffff;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2772,7 +2772,7 @@ input, select, textarea {
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: #ffffff;
 				}
 
 		#header > nav {
