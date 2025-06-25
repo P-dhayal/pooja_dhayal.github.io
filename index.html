@@ -15,8 +15,10 @@
 				justify-content: center;
 				align-items: center;
 				text-align: center;
-				color: #333;
-				background-color: #f8f9fa; /* Light gray background */
+				color: white;
+				background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+							url('images/banner.jpg') no-repeat center center;
+				background-size: cover;
 				padding: 0 20px;
 			}
 			
@@ -41,8 +43,28 @@
 				font-style: italic;
 			}
 			
+			/* Avatar Image Fix */
+			.image.avatar {
+				display: block;
+				margin: 0 auto;
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				overflow: hidden;
+				border: 3px solid white;
+			}
+			
+			.image.avatar img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			
 			/* Responsive adjustments */
 			@media (max-width: 768px) {
+				.hero {
+					height: 80vh;
+				}
 				.hero h1 {
 					font-size: 2.5rem;
 				}
@@ -52,6 +74,10 @@
 				.hero p {
 					font-size: 1.2rem;
 				}
+				.image.avatar {
+					width: 120px;
+					height: 120px;
+				}
 			}
 		</style>
 	</head>
@@ -60,7 +86,9 @@
 		<!-- Header Section -->
 		<section id="header">
 			<header>
-				<span class="image avatar"><img src="images/avatar.png" alt="Pooja Dhayal" /></span>
+				<span class="image avatar">
+					<img src="images/avatar.jpg" alt="Pooja Dhayal" />
+				</span>
 				<h1 id="logo"><a href="#">Pooja Dhayal</a></h1>
 				<p>pooja_d@csst.iitr.ac.in</p>
 			</header>
@@ -91,7 +119,7 @@
 					<p>Research Scholar | Remote Sensing & Machine Learning</p>
 				</section>
 
-				<!-- Rest of your content remains the same -->
+				<!-- About Section -->
 				<section id="one" class="container">
 					<header class="major">
 						<h2>About</h2>
@@ -99,7 +127,7 @@
 					<p>I am a research scholar in the Centre for Space Science and Technology, IIT Roorkee, under the supervision of Prof. Sandip Banerjee and Prof. R. Balasubramanian. My research is focused on the application of Remote sensing techniques and Machine Learning in Earth Observation.</p>
 				</section>
 
-				<!-- Two -->
+				<!-- Education & Experience -->
 				<section id="two">
 					<div class="container">
 						<h3 style="color: #4169E1;">Education & Experience</h3>
