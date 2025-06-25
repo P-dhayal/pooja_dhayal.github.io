@@ -6,43 +6,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Hero Section Styling */
-			.hero {
-				position: relative;
-				height: 100vh;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				text-align: center;
+			/* Custom CSS for banner text overlay */
+			
+			.banner-text {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 				color: white;
-				background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-							url('images/banner.jpg') no-repeat center center;
-				background-size: cover;
-				padding: 0 20px;
+				text-align: center;
+				width: 100%;
 			}
-			
-			.hero h1 {
-				font-size: 3.5rem;
-				margin: 0;
-				line-height: 1.2;
-				font-weight: 300;
+			.banner-text h1 {
+				font-size: 3.5em;
+				margin-bottom: 0.2em;
 				text-transform: uppercase;
-				letter-spacing: 2px;
+				font-weight: bold;
 			}
-			
-			.hero h2 {
-				font-size: 2.5rem;
-				margin: 10px 0 0 0;
-				font-weight: 700;
+			.banner-text p {
+				font-size: 1.5em;
+				margin-top: 0;
 			}
-			
-			.hero p {
-				font-size: 1.5rem;
-				margin: 20px 0 0 0;
-				font-style: italic;
-			}
-			
+			.image.main {
+				position: relative;
+			}			
 			/* Avatar Image Fix */
 			.image.avatar {
 				display: block;
