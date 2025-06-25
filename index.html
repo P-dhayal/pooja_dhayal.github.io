@@ -6,144 +6,150 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			/* Custom CSS for banner text overlay */
-			.image.main {
+			/* Hero Section Styling */
+			.hero {
 				position: relative;
-				width: 100%;
-				height: 60vh; /* Adjust height as needed */
-				overflow: hidden;
-				margin: 0;
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				color: #333;
+				background-color: #f8f9fa; /* Light gray background */
+				padding: 0 20px;
 			}
 			
-			.image.main img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				display: block;
-			}
-			.banner-text {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				color: white;
-				text-align: center;
-				width: 100%;
-			}
-			.banner-text h1 {
-				font-size: 3.5em;
-				margin-bottom: 0.2em;
+			.hero h1 {
+				font-size: 3.5rem;
+				margin: 0;
+				line-height: 1.2;
+				font-weight: 300;
 				text-transform: uppercase;
-				font-weight: bold;
+				letter-spacing: 2px;
 			}
-			.banner-text p {
-				font-size: 1.5em;
-				margin-top: 0;
+			
+			.hero h2 {
+				font-size: 2.5rem;
+				margin: 10px 0 0 0;
+				font-weight: 700;
 			}
-			.image.main {
-				position: relative;
+			
+			.hero p {
+				font-size: 1.5rem;
+				margin: 20px 0 0 0;
+				font-style: italic;
+			}
+			
+			/* Responsive adjustments */
+			@media (max-width: 768px) {
+				.hero h1 {
+					font-size: 2.5rem;
+				}
+				.hero h2 {
+					font-size: 2rem;
+				}
+				.hero p {
+					font-size: 1.2rem;
+				}
 			}
 		</style>
 	</head>
 	<body class="is-preload">
 
-
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.png"" alt="Pooja Dhayal" /></span>
-					<h1 id="logo"><a href="#">Pooja Dhayal</a></h1>
-					<p>pooja_d@csst.iitr.ac.in</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Education & Experience</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					</ul>
-				</footer>
-			</section>
+		<!-- Header Section -->
+		<section id="header">
+			<header>
+				<span class="image avatar"><img src="images/avatar.png" alt="Pooja Dhayal" /></span>
+				<h1 id="logo"><a href="#">Pooja Dhayal</a></h1>
+				<p>pooja_d@csst.iitr.ac.in</p>
+			</header>
+			<nav id="nav">
+				<ul>
+					<li><a href="#one" class="active">About</a></li>
+					<li><a href="#two">Education & Experience</a></li>
+					<li><a href="#four">Contact</a></li>
+				</ul>
+			</nav>
+			<footer>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</footer>
+		</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
+			<!-- Main -->
+			<div id="main">
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.jpg" alt="Background Banner" />
-									<div class="banner-text">
-										<h1>HELLO, I'M</h1>
-										<h1>Pooja Dhayal</h1>
-										<p>Research Scholar | Remote Sensing & Machine Learning</p>
-									</div>
+				<!-- Hero Section -->
+				<section class="hero">
+					<h1>HELLO, I'M</h1>
+					<h2>Pooja Dhayal</h2>
+					<p>Research Scholar | Remote Sensing & Machine Learning</p>
+				</section>
+
+				<!-- Rest of your content remains the same -->
+				<section id="one" class="container">
+					<header class="major">
+						<h2>About</h2>
+					</header>
+					<p>I am a research scholar in the Centre for Space Science and Technology, IIT Roorkee, under the supervision of Prof. Sandip Banerjee and Prof. R. Balasubramanian. My research is focused on the application of Remote sensing techniques and Machine Learning in Earth Observation.</p>
+				</section>
+
+				<!-- Two -->
+				<section id="two">
+					<div class="container">
+						<h3 style="color: #4169E1;">Education & Experience</h3>
+						<div class="features">
+							<article>
+								<div class="inner">
+									<h4>Education</h4>
+									<h5>2018-2023</h5>
+									<p style="margin-bottom: 0;">Indian Institute of Science Education and Research (IISER), Mohali</p>
+									<p style="white-space: nowrap;">BS-MS; Major in Chemistry & Minor in Earth Science</p>
 								</div>
-								<div class="container">
-									<header class="major">
-										<h2>About</h2>
-									</header>
-									<p>I am a research scholar in the Centre for Space Science and Technology, IIT Roorkee, under the supervision of Prof. Sandip Banerjee and Prof. R. Balasubramanian. My research is focused on the application of Remote sensing techniques and Machine Learning in Earth Observation.</p>
+							</article>
+							<article>
+								<div class="inner">
+									<h4>Experience</h4>
+									<h5>Feb 2024 - Aug 2024</h5>
+									<p style="margin-bottom: 0;">Project Associate</p>
+									<p style="margin-bottom: 0;">Department of Computer Science and Engineering,</p>
+									<p style="margin-bottom: 0;">Indian Institute of Technology (IIT) Roorkee</p>
+									
+									<h5 style="margin-top: 1em;">Jul 2022 - Aug 2022</h5>
+									<p style="margin-bottom: 0;">Internship</p>
+									<p>Indian Space Research Organization (ISRO), RRSC - West Jodhpur</p>
 								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3 style="color: #4169E1;">Education & Experience</h3>
-									<div class="features">
-										<article>
-											<div class="inner">
-												<h4>Education</h4>
-												<h5>2018-2023</h5>
-												<p style="margin-bottom: 0;">Indian Institute of Science Education and Research (IISER), Mohali</p>
-												<p style="white-space: nowrap;">BS-MS; Major in Chemistry & Minor in Earth Science</p>
-											</div>
-										</article>
-										<article>
-											<div class="inner">
-												<h4>Experience</h4>
-												<h5>Feb 2024 - Aug 2024</h5>
-												<p style="margin-bottom: 0;">Project Associate</p>
-												<p style="margin-bottom: 0;">Department of Computer Science and Engineering,</p>
-												<p style="margin-bottom: 0;">Indian Institute of Technology (IIT) Roorkee</p>
-												
-												<h5 style="margin-top: 1em;">Jul 2022 - Aug 2022</h5>
-												<p style="margin-bottom: 0;">Internship</p>
-												<p>Indian Space Research Organization (ISRO), RRSC - West Jodhpur</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
-
-						<!-- Footer -->
-							<section id="footer">
-								<div class="container">
-									<ul class="copyright">
-										<li>&copy; Pooja Dhayal. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-									</ul>
-								</div>
-							</section>
-
+							</article>
+						</div>
 					</div>
+				</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; Pooja Dhayal. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
 
 			</div>
 
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
