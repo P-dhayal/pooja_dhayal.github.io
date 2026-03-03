@@ -75,12 +75,48 @@
 				height: 100%;
 				object-fit: cover;
 			}
+			/* Publication styling */
+			.publication-item {
+				margin-bottom: 20px;
+				padding: 15px;
+				background: #f8f9fa;
+				border-left: 4px solid #4169E1;
+				border-radius: 0 8px 8px 0;
+			}
+			.publication-date {
+				font-weight: bold;
+				color: #4169E1;
+				font-size: 18pt;
+				margin-bottom: 10px;
+			}
+			.publication-authors {
+				font-size: 16pt;
+				margin-bottom: 5px;
+				line-height: 1.4;
+			}
+			.publication-title {
+				font-size: 18pt;
+				font-weight: bold;
+				margin-bottom: 5px;
+				line-height: 1.4;
+			}
+			.publication-journal {
+				font-size: 16pt;
+				color: #555;
+				font-style: italic;
+				line-height: 1.4;
+			}
 			/* Responsive adjustments */
 			@media (max-width: 768px) {
 				.image.main {
 					min-height: 150px; /* Reduced minimum height for smaller screens */
 					max-height: 300px; /* Reduced maximum height */
 					height: 40vh; /* Slightly larger relative height for phones */
+				}
+				.publication-authors, .publication-title, .publication-journal {
+					font-size: 14pt;
+				}
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -98,13 +134,13 @@
 				<ul>
 					<li><a href="#one" class="active">About</a></li>
 					<li><a href="#two">Education & Experience</a></li>
-					<li><a href="#three">Contact</a></li>
+					<li><a href="#publications">Publications</a></li>
+					<li><a href="#four">Contact</a></li>
 				</ul>
 			</nav>
 			<footer>
 				<ul class="icons">
 					<li><a href="mailto:pooja_d@csst.iitr.ac.in" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-
 					<li><a href="https://www.linkedin.com/in/pooja-dhayal-b8186b218" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 				</ul>
 			</footer>
@@ -200,25 +236,25 @@
 						</div>
 					</div>
 				</section>
-						
-      <!-- Contact Section -->
-<section id="four">
-    <div class="container">
-        <header class="major">
-            <h2 style="color: #4169E1;font-size: 20pt">Contact</h2>
-        </header>
-        <div class="features">
-            <article>
-                <div class="inner">
-                    <ul style="font-size: 18pt; list-style-type: none; padding-left: 0; margin-top: 0;">
-                        <li style="margin-bottom: 0.2em;">Email: <a href="mailto:pooja_d@csst.iitr.ac.in">pooja_d@csst.iitr.ac.in</a></li>
-                        <li>LinkedIn: <a href="https://www.linkedin.com/in/pooja-dhayal-b8186b218" target="_blank">linkedin.com/in/pooja-dhayal-b8186b218</a></li>
-                    </ul>
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
+			
+				<!-- Contact Section -->
+				<section id="four">
+					<div class="container">
+						<header class="major">
+							<h2 style="color: #4169E1;font-size: 20pt">Contact</h2>
+						</header>
+						<div class="features">
+							<article>
+								<div class="inner">
+									<ul style="font-size: 18pt; list-style-type: none; padding-left: 0; margin-top: 0;">
+										<li style="margin-bottom: 0.2em;">Email: <a href="mailto:pooja_d@csst.iitr.ac.in">pooja_d@csst.iitr.ac.in</a></li>
+										<li>LinkedIn: <a href="https://www.linkedin.com/in/pooja-dhayal-b8186b218" target="_blank">linkedin.com/in/pooja-dhayal-b8186b218</a></li>
+									</ul>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
 
 			</div>
 
@@ -235,4 +271,3 @@
 
 	</body>
 </html>
-
